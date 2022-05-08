@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: beige;
+            margin: 10px 30px;
+    font-size: 17px;
+    padding: 8px;
+    background-image: url("backgrounds-16x9-1.jpg");
+    border-color: black;
+        }
+     .heading
+     {   
+         text-align: center;
+         background-color: azure;
+         border-color: black;
+     }
+     .content{
+         
+         padding: 15px 30px 25px 30px;
+    border:1px solid lightgray;
+    border-radius: 4px;
+    border-color: black;
+     }
+     .payment{
+        padding: 15px 30px 25px 30px;
+    border:1px solid lightgray;
+    border-radius: 4px;
+    border-color: black;
+     }
+     input[type="submit"]
+     {
+        background-color: aqua;   
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  position: relative;
+  border-color: black;
+  transition:width 3s;
+}
+input[type="submit"]:hover{
+    background-color: rgb(61, 43, 226);
+    width: 100px;
+
+}    
+    </style>
+</head>
+<body>
+    <form action="" method=""> 
+        <div class="heading">
+            <h1>Registration Form</h1>
+           <p>Please fill all the information correctly.</p> 
+        </div>
+       <div class="content">
+           <h3>Personal Information</h3>
+           <hr>
+        <h4>Name:<input type="name"id="name"name="name" textarea placeholder="Your Name."required></textarea></h4>
+        <h4>Father's Name:<input type="name"id="name"textarea placeholder="Father's Name."required></textarea></h4>
+        <h4>Mobile no.:<input type="number"id="number"textarea placeholder="Contact No."required></textarea</h4>
+        <h4>Email ID:<input type="email" id="email"textarea placeholder="abc@gmail.com"required></textarea></h4>
+        <h4>Gender:
+        <h5> Male<input type ="radio" name="gender" id="male" > Female<input type="radio" name="gender" id="female" required> </h5>
+        </h4>
+        <h4>Category:
+            <select name="" id="">
+                <option value="">Category</option>
+                <option value="General">General</option>
+                <option value="OBC">OBC</option>
+                <option value="SC/ST">SC/ST</option>
+            </select>
+        </h4>
+        <h4>Aadhar Card:<input type="number"id="number"textarea placeholder="0000-0000-0000" required></h4>
+        <h4>Address:<textarea name="address"id="address"textarea placeholder="Current Address"cols="30"row="10" required></textarea></h4>
+        <h4>District:<input type="name"id="name" required></h4>
+        <h4>State:<input type="name"id="name" required></h4>
+        <h4>Pin Code:<input type="number"id="number"required></h4>
+    </div>
+        <div class="payment">
+            <h3>Payment Information</h3>
+            <hr>
+            <h4>Card Type:
+            <select name="card_type" id="card_type">
+            <option value="">--Select Card type</option>
+            <option value="visa">Visa</option>
+            <option value="rupay">Rupay</option>
+            <option value="mastercard">Master card</option>
+            </select>
+            </h4>
+            <h4>Card Holder's Name: <input type="text" name="name" id="name" required></h4>
+    <h4>Card Number: <input type="number" id="card_number" name="card_number" required></h4>
+    <h4>Expiration Date: <input type="date" name="exp_date" id="exp_date" required></h4>
+    <h4>CVV <input type="password" name="cvv" id="cvv" required>
+        </div>
+        <h3>
+            <input type="submit" value="Submit">
+        </h3>
+        
+    </form>
+
+</body>
+</html>
